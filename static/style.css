@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #141414;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 800px;
+    height: 90vh;
+    background-color: #222222;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    padding: 16px 20px;
+    background-color: #E50914;
+    color: white;
+    border-radius: 12px 12px 0 0;
+}
+
+.chat-header-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.chat-header-info i {
+    font-size: 24px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-text h1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.status {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #141414;
+}
+
+.message {
+    margin-bottom: 16px;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-content {
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+.user {
+    margin-left: auto;
+}
+
+.user .message-content {
+    background-color: #E50914;
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.bot {
+    margin-right: auto;
+}
+
+.bot .message-content {
+    background-color: #222222;
+    color: #fff;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.message-time {
+    font-size: 11px;
+    color: #8C8C8C;
+    margin-top: 4px;
+    margin-left: 12px;
+}
+
+.chat-input-container {
+    padding: 16px;
+    background-color: #222222;
+    border-top: 1px solid #333333;
+}
+
+.chat-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #141414;
+    border-radius: 24px;
+    padding: 8px 16px;
+    border: 1px solid #333333;
+}
+
+#user-input {
+    flex: 1;
+    border: none;
+    background: none;
+    padding: 8px;
+    font-size: 14px;
+    outline: none;
+    color: #fff;
+}
+
+#user-input::placeholder {
+    color: #8C8C8C;
+}
+
+.send-button {
+    background: none;
+    border: none;
+    color: #E50914;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+}
+
+.send-button:hover {
+    color: #ff0f1f;
+}
+
+/* 電影推薦卡片樣式 */
+.movie-card {
+    background-color: #222222;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.movie-title {
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.movie-info {
+    font-size: 13px;
+    color: #8C8C8C;
+    margin-bottom: 8px;
+}
+
+.movie-description {
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+/* 捲軸樣式 */
+.chat-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+    background: #141414;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 3px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb:hover {
+    background: #444444;
+}
+
+/* 強調重要資訊 */
+.movie-title, 
+.movie-info strong {
+    color: #E50914;
+}
+
+/* 輸入框聚焦效果 */
+.chat-input-wrapper:focus-within {
+    border-color: #E50914;
+    box-shadow: 0 0 0 1px #E50914;
+}
+
+/* 動畫效果 */
+.message {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
