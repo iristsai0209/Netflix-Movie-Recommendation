@@ -6,34 +6,27 @@ A content-based recommendation system that suggests Netflix movies to users via 
 
 ---
 
-## 🔥 Demo
+## Demo
 
 ![Chatbot Demo](images/Chatbot.jpeg)
 
 ---
 
-## 🛠️ Features
+## Features
 
-- 🗂️ **Data Cleaning and Preprocessing**:  
+- **Data Cleaning and Preprocessing**:  
   Handled missing values, outliers, and standardized fields using Python (Pandas, NumPy).
 
-- 🧠 **Content-Based Recommendation Model**:  
+- **Content-Based Recommendation Model**:  
   Built with TF-IDF vectorization and cosine similarity to match users' preferences.
 
-- 🗣️ **Real-Time Interaction**:  
+- **Real-Time Interaction**:  
   Deployed a chatbot using Flask Web API to provide movie suggestions instantly.
 
-- 📈 **Data Visualization**:  
+- **Data Visualization**:  
   Utilized Matplotlib and Seaborn for analyzing movie trends and data distribution.
 
-- 🖥️ **Frontend UI**:  
+- **Frontend UI**:  
   Simple and modern chat interface styled with HTML, CSS, and JavaScript.
 
----
-
-## 🚀 Tech Stack
-
-- **Backend**: Python (Flask)
-- **Frontend**: HTML + CSS + JavaScript
-- **Data Processing**: Pandas, NumPy, NLTK, scikit-learn
-- **Deployment**: Local Flask server
+---I built a movie recommendation chatbot that helps users find films they might like. First, I cleaned and organized the movie data to make sure it was accurate and easy to work with. Then, I created a system that compares movie descriptions to suggest similar titles based on what the user likes. I used a simple web chatbot so users can get real-time suggestions by just typing a message. I also analyzed and visualized movie trends to better understand what’s popular, and designed the chat interface to be clean and easy to use.
